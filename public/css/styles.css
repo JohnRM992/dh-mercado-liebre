@@ -30,7 +30,7 @@ div.top-header{
     flex-wrap:wrap;
 
 }
-
+/* ======== Header ======== */
 .logo{
     width: 50%;
 }
@@ -173,7 +173,10 @@ div.main-article{
     padding: 5px;
     width: 30px;
     height: 30px;
-    
+    transition: transform 0.3s ease-in-out;
+}
+.fa-truck:hover{
+    transform: rotate(90deg);
 }
 .product_img{
     position:relative;
@@ -207,7 +210,7 @@ div.main-article{
     padding-bottom:15px;
 }
 
-/* Register section */
+/* ========Register section======== */
 
 .register-container {
     text-align: center;
@@ -287,7 +290,7 @@ form {
     transition: background-color,0.5s;
   }
   .boton-submit:hover{
-    background-color: #1259c3;
+    background-color: #0022AA;
     color:#FFF;
   }
   .boton-reset{
@@ -362,7 +365,7 @@ button {
     padding-left: 10px;
     height:20px;
 }
-  /* Footer section */
+  /* ========Footer section====== */
 
 
 div.copy-main{
@@ -396,11 +399,24 @@ div.copy-main{
 .pieDePagina-iconos:hover{
     color:#3089e1;
 }
-
-/* .form-info-1{
-   height:80px;
+.form-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:60vh;
+    width:100%;
+}
+.texto-login{
+    padding-bottom:30px;
+}
+/* Login Section */
+.form-login{
+    position:relative;
+    margin-top:20px;
+    width:33%;
     
-} */
+    align-self: center;
+}
 
 @media (min-width:380px){
     .description{
