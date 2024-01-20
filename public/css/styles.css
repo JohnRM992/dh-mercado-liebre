@@ -467,6 +467,15 @@ button {
     .pieDePagina-iconos:hover{
         color:#3089e1;
     }
+    .boton-submit{
+        width:60%;
+        border:1px solid #666;
+        text-align: center;
+        margin:0;
+        padding:0;
+        color:#000;
+        transition: background-color,0.5s;
+      }
    
 }
 
