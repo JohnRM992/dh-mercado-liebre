@@ -6,6 +6,7 @@
     }
 
 body{
+    
     font-family: 'Roboto', sans-serif;
     background-color: #ebebeb;
     
@@ -39,6 +40,7 @@ div.top-header{
 
 header{
     background-color: #EAC926;
+    
 }
 
 header div.logo{
@@ -98,11 +100,17 @@ div.burger-menu i{
 
 article div.main-article{
     width: 100%;
+    
 }
 
+article{
+    background-color: #FFF;
+}
 
 .price{
     font-size: 18px;
+    position:relative;
+    left:15px;
 }
 
 .discount,
@@ -114,6 +122,8 @@ article div.main-article{
 h3,
 .description{
     color: #666;
+    position:relative;
+    left: 15px;
 }
 
 section.banner img{
@@ -125,10 +135,10 @@ main {
     margin: 0 auto;
   }
 
-  main section article {
-    background-color: #fff;
+  main section{
+    
     margin-bottom: 10px; /* Separación entre cada artículo */
-    border-top: 1px solid #ebebeb;
+    
     padding: 15px;
   }
 main section article img{
@@ -140,42 +150,257 @@ main section article i,
     color: #39b54a;
 }
 
-main-article{
-    position:relative;
-}
-main-article > .fa-truck{
-display: block;
-font-size: 16px;
-padding: 5px;
-width: 30px;
-height: 30px;
-border: 1px solid #39b54a;
-background-color: #FFF;
-border-radius: 50%;
-position: absolute;
-right: 20px;
-top: -15px;
+
+.main-article{
+    background-color: #FFF;
 }
 
-.a-pieDePagina{
-    margin-top: 10px;
+
+
+div.main-article{
+    background-color: #FFF;
+}
+
+.fa-truck{
+        
+    display:block;    
+    align-self:end;
+    position:absolute;
+    right:20px;
+    top: -18px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    
+}
+.product_img{
+    position:relative;
+    border-bottom: 1px solid #ebebeb;
+    
+}
+
+div.main-article{
+    display:flex;
+    flex-wrap:wrap;
+    position:relative;
+    
+}
+
+
+.price{
+    
+    width:30%;
+    padding-top:20px;
+}
+.discount{
+    width:70%;
+    text-align:center;
+    padding-bottom:15px;
+    padding-top:20px;
+}
+.description{
+    display:block;
+    text-align:start;
+    padding-top:5px;
+    padding-bottom:15px;
+}
+
+/* Register section */
+
+.register-container {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    height:100vh;
+    
+    
+  }
+form {
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+
+  .form-final {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    position:relative;
+    top:6%;
+    padding-right: 15px;
+
+  }
+  .checkbox-1{
+    
+    text-align: start;
+    position:relative;
+   
+    left: 5%;
+  }
+  
+  .input-checkbox{
+    height:15px;
+    width:15px;
+  }
+  .label-checkbox{
+    
+    font-size:14px;
+    position:relative;
+    top:6px;
+    
+  }
+
+  .form-foto{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    position:relative;
+    top:5%;
+    height:40px;
+    
+  }
+  .file-foto{
+    height:40px;
+  }
+  .label-foto{
+    display:block;
+    position:relative;
+    left:1%;
+  }
+
+  .form-botones{
+    display: flex;
+    position:relative;
+    top:30%;
+    width:100%;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .boton-submit{
+    width:30%;
+    border:1px solid #666;
+    color:#000;
+    transition: background-color,0.5s;
+  }
+  .boton-submit:hover{
+    background-color: #1259c3;
+    color:#FFF;
+  }
+  .boton-reset{
+    width:30%;
+    border:1px solid #666;
+    background-color: #ebebeb;
+    transition: background-color,0.5s;
+  }
+  .boton-reset:hover{
+    background-color: #cbcbcb;
+
+  }
+
+  input,
+select,
+textarea,
+button {
+  width: 100%;
+  box-sizing: border-box;
+  
+  margin-bottom: 15px; /* Ajusta según tus necesidades */
+
+    position: relative;
+    top: 23%;
+    
+    height: 35px;
+    padding-left: 8px;
+    border: none;
+    border-radius:5px;
+}
+
+.form-info-fecha{
+    position:relative;
+    top:20px;
+    text-align: start;
+    
+}
+.form-info-perfil{
+    display: flex;
+    flex-wrap:wrap;
+    width:100%;
+    position:relative;
+    top:30px;
+    
+}
+.form-info-perfil-1{
+    position:relative;
+    
+    left:5px;
+    width:100%;
+    text-align: start;
+
+}
+#perfilUsuarios{
+    display: flex;
+    position:relative;
+    text-align:end;
+    height:30px;
+    left:5%;
+    padding-right: 15px;
+}
+.label-fecha{
+    position:relative;
+    bottom:5px;
+    left:5px;
+}
+.texto-radio{
+    position:relative;
+    top:15px;
+    left:5px;
+    margin-right: 20px;
+    padding-left: 10px;
+    height:20px;
+}
+  /* Footer section */
+
+
+div.copy-main{
+    background-color: #FFF;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width:100%;
+}
+.a-pieDePagina{
+    width:33.33%;
+    margin:0;
     color: #666;
+    text-align: center;
+    padding-top: 15px;
 }
 
 .copyright{
+    padding-top:10px;
     text-align: center;
-    padding-top: 15px;
+    width:100%;
     color: #666;
 }
 .pieDePagina-iconos{
+    text-align: center;
     font-size: 2em;
     color: #1259c3;
+    transition: color,0.5s;
+}
+.pieDePagina-iconos:hover{
+    color:#3089e1;
 }
 
-
-
-
+/* .form-info-1{
+   height:80px;
+    
+} */
 
 @media (min-width:380px){
     .description{
@@ -194,9 +419,6 @@ top: -15px;
     article{
         margin-top:20px;
     }
-    /* .busqueda{
-
-    } */
 
     .barra{
         position:relative;
@@ -223,9 +445,12 @@ top: -15px;
     }
    
     .cuotas{
-    
     position:relative;
     left:20%;
+    }
+
+    .barra:focus{
+        outline:none;
     }
 }
 
@@ -314,9 +539,11 @@ top: -15px;
         
     }
 
-        
+    div.top-header{
+        padding:30px;
+    }
 }
-@media (min-width:1024px){
+@media (min-width:1200px){
     .burger-menu{
         display:none;
     }
@@ -332,9 +559,41 @@ top: -15px;
     
     article{
         width: 21%;
+       
     }
     .busqueda{
         display:inline;
     }    
-    
+    .submit{
+        position:relative;
+        top:30%;
+    }
+    .nav1{
+        position:relative;
+        left: 5%;
+        justify-content: start;
+        margin-bottom: 20px;
+        
+    }
+    li{
+        padding-right:20px;
+    }
+    .nav2{
+        justify-content: end;
+        position:relative;
+        right: 5%;
+    }
+    div.top-header{
+        padding:30px;
+    }
+    .cuotas{
+        position:relative;
+        top:40px;
+    }
+    p,a{
+        font-size: 16px;
+    }
+
+ 
+
 }
