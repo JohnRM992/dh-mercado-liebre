@@ -698,7 +698,8 @@ button {
         visibility: hidden;
         transition: opacity 0.3s ease-in-out;
     }
-    caja-producto:hover .description{
+
+    .caja-producto:hover .description{
         opacity: 1;
         visibility: visible;
     }
