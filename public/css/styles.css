@@ -500,14 +500,17 @@ button {
         box-shadow: 9px 10px 22px -2px rgba(92,92,92,0.71);
     }
      */
-    article{
-        transition: box-shadow,0.5s;
+    article{      
         margin-top: 20px;
         width: 40%;
     }
-    article:hover{
-        box-shadow: 9px 10px 22px -2px rgba(92,92,92,0.71);
+   
+    /* .caja-producto{
+        transition: box-shadow,0.5s;
     }
+    .caja-producto:hover{
+        box-shadow: 9px 10px 22px -2px rgba(92,92,92,0.71);
+    } */
 
     div.top-header{
         display:flex;
@@ -617,14 +620,16 @@ button {
         margin-bottom:20px;
     }
     article{
-        transition: box-shadow,0.5s;
+        
         margin-top: 20px;
         width: 21%;
     }
-    article:hover{
+    .caja-producto:hover{
         box-shadow: 9px 10px 22px -2px rgba(92,92,92,0.71);
     }
- 
+    .caja-producto{
+        transition: box-shadow,0.5s;
+    }
     .busqueda{
         display:inline;
     }    
@@ -693,7 +698,7 @@ button {
         visibility: hidden;
         transition: opacity 0.3s ease-in-out;
     }
-    article:hover .description{
+    caja-producto:hover .description{
         opacity: 1;
         visibility: visible;
     }
